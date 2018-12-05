@@ -19,7 +19,7 @@ public class ExampleService {
         ExampleChildEntity exampleChildEntity = new ExampleChildEntity("Child 1");
         ExampleEntity exampleEntity = new ExampleEntity(exampleChildEntity);
         exampleChildEntity.setExampleEntity(exampleEntity);
-        exampleRepository.saveAndFlush(exampleEntity); 
+        exampleRepository.saveAndFlush(exampleEntity);
 
         exampleEntity.setExampleChildEntity(null);
         exampleRepository.saveAndFlush(exampleEntity);
